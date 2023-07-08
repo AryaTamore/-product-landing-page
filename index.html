@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="https://www.pepsi.com/en-us/uploads/images/logo-large.png?mtime=20180110134814"
+                    class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Thats What<br><span>I like</span></h2>
+                <p>Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757" onclick="imgSlider('https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757');changeBgcolor('#0062be')"></li>
+            <li><img src="https://www.pepsi.com/en-us/uploads/images/Diet-Pepsi-v2_12oz.png?mtime=20180215173735" onclick="imgSlider('https://www.pepsi.com/en-us/uploads/images/Diet-Pepsi-v2_12oz.png?mtime=20180215173735');changeBgcolor('#e60c2c')"></li>
+            <li><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar.png" onclick="imgSlider('https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar.png');changeBgcolor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="https://img.icons8.com/?size=512&id=118489&format=png"></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/?size=512&id=DpOQ6G5p47f0&format=png"></a></li>
+            <li><a href="#"><img src="https://img.icons8.com/?size=512&id=102925&format=png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider (anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgcolor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
